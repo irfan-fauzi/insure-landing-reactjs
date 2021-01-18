@@ -1,0 +1,108 @@
+.hero{
+  font-family: 'DM Serif Display', serif;
+  background: $darkViolet;
+  color: #eaeaea;
+  height: 450px;
+  position: relative;
+  z-index: 3;
+  &__text-wrap{
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: relative;
+    top: 4.5rem;
+    h1{
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 200;
+    }
+    p{
+      font-family: 'Karla', sans-serif;
+      margin: 1rem 0;
+    }
+    .btn{
+      background: transparent;
+      border-color: #eaeaea;
+      transition: 0.5s;
+      &:hover{
+        background: #eaeaea;
+        color: $darkViolet;
+      }
+    }
+  }
+  
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat;
+    top: 19.5rem;
+    //z-index: -1;
+  }
+  &::after{
+    content: "";
+    background: url(../images/bg-pattern-intro-right-desktop.svg) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    //background-size: cover;
+    //left: 0;
+    background-position: right;
+    top: 0;
+    z-index: -1;
+  }
+}
+.img-hero{
+  position: relative;
+  transform: scale(0.80);
+}
+.line{
+  display: block;
+  border-top: #eaeaea solid 1px;
+  width: 150px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero{
+   // background: none;
+   height: 900px;
+    .flex{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .img-hero{
+        margin-top: -5rem;
+        order: 1;
+        transform: scale(0.65);
+      }
+      .hero__text-wrap{
+        order: 2;
+        text-align: center;
+        margin-top: -7rem;
+        h1{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 0.8rem;
+          line-height: 2;
+        }
+        .line{
+          display: none;
+        }
+      }
+    }
+    &::before{
+      background: url(../images/bg-pattern-intro-left-mobile.svg) no-repeat;
+      top: 28rem;
+      
+
+    }
+    &::after{
+      background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat;
+      top: 28rem;
+      right: 0;
+      background-position: right;
+    }
+  }
+} 
