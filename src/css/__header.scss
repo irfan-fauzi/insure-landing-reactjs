@@ -85,7 +85,8 @@ header{
        }
        .btn{
          transition: 0.5s;
-         border-color: $darkGrayishViolet;
+         border-color: black;
+         color: black;
         &:hover{
           background: $darkViolet;
           color: #fff;
@@ -107,18 +108,19 @@ header{
      top: -20rem;
      transition: 0.5s;
      z-index: 5;
-     li{
+     gap: 2rem;
+     a{
        cursor: pointer;
-       margin-bottom: 1rem;
+       //margin-bottom: 1rem;
        //background: red;
        width: 100%;
        text-align: center;
        padding: 1rem;
        color: #fff;
-       
-       &:first-child{
-         margin-top: 1.5rem;
-       }
+      //margin-top: 2rem;
+      //  &:first-child{
+      //    margin-top: 1.5rem;
+      //  }
        &:active,
        &:hover{
          color: aqua;
@@ -153,8 +155,9 @@ header{
    }
    .show{
      height: 500px;
-     top: 4.2rem;
+     top: 4.4rem;
      background: $veryDarkViolet;
+     padding-top: 2.5rem;
     
    }
  } 
