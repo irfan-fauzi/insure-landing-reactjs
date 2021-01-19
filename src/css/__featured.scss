@@ -1,0 +1,51 @@
+.featured{
+  margin-top: 15rem;
+  //border: red solid 1px;
+  padding: 5rem 0;
+  h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .line{
+    border-color: #222222;
+  }
+  h1,h4{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 200;
+    color: $darkViolet;
+  }
+  .featured-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    .card{
+     // border: black solid 1px;
+      padding: 1rem 0;
+      .icon-cards{
+        transform: scale(0.80) translate(-10px);
+      }
+      h4{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+      }
+      p{
+        color:$darkGrayishViolet;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  .featured{
+    margin-top: 2rem;
+    text-align: center;
+    h1{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+    .line{
+      margin: auto;
+    }
+  }
+}

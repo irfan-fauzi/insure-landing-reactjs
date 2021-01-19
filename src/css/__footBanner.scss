@@ -1,0 +1,65 @@
+.footBanner{
+  //border: red solid 1px;
+  background-color: $darkViolet;
+  color: #eaeaea;
+  padding: 1.5rem;
+  position: relative;
+  
+  .flex{
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    h1{
+      font-family: 'DM Serif Display', serif;
+      font-weight: 200;
+      font-size: 3.2rem;
+      //border: solid red 1px;
+      display: inline-block;
+      width: 500px;
+      box-sizing: border-box;
+      line-height: 1;
+    }
+    .btn{
+      background: transparent;
+      border-color: #eaeaea;
+      transition: 0.5s;
+      z-index: 3;
+      &:hover{
+        background-color: #eaeaea;
+        color: $darkViolet;
+      }
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-pattern-how-we-work-desktop.svg) no-repeat;
+    background-position: right;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footBanner{
+    text-align: center;
+    .flex{
+      flex-direction: column;
+      justify-content: center;
+      height: 250px;
+      h1{
+        font-size: 2.5rem;
+        width: 300px;
+        margin-bottom: 1.8rem;
+      }
+    }
+    &::after{
+      background: url(../images/bg-pattern-how-we-work-mobile.svg) no-repeat;
+      background-position: right;
+      
+      
+    }
+  }
+} 
