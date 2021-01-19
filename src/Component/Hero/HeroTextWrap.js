@@ -6,7 +6,7 @@ function HerotextWrap(props) {
       <span className="line" />
       <h1>{props.mainTagline}</h1>
       <p>{props.secondTagline}</p>
-      <a className="btn">{props.btnText}</a>
+      <a className="btn" href="https://github.com/irfan-fauzi">{props.btnText}</a>
     </div>
   );
 }

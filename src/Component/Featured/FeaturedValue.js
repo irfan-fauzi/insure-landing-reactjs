@@ -1,12 +1,12 @@
 import React from 'react';
 
-function FeaturedValue(props) {
+function FeaturedValue(val) {
   return (
     <>
       <div className="card">
-        <img src={props.icon} className="icon-cards" />
-        <h4>{props.title}</h4>
-        <p>{props.detail}</p>
+        <img src={val.icons} className="icon-cards" alt="img" />
+        <h4>{val.titles}</h4>
+        <p>{val.details}</p>
       </div>
     </>
   );

@@ -13,8 +13,8 @@ function Hero() {
     <section className="hero">
       <div className="container flex">
         <HeroTextWrap mainTagline={dataHero[0].mainTagline} secondTagline={dataHero[0].secondTagline} btnText={dataHero[0].btnText} />
-        <img src={dataHero[0].imgHero} className="img-hero" />
-        
+        <img src={dataHero[0].imgHero} alt="img" className="img-hero" />
+
       </div>
     </section>
   );

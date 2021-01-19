@@ -11,7 +11,7 @@ function FootBanner() {
     <div className="footBanner">
       <div className="container flex">
         <h1>{dataFootBanner[0].mainText}</h1>
-        <a className="btn">{dataFootBanner[0].btnTxt}</a>
+        <a className="btn" href="https://github.com/irfan-fauzi">{dataFootBanner[0].btnTxt}</a>
       </div>
     </div>
   );

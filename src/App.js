@@ -3,6 +3,7 @@ import Header from './Component/Header/Header';
 import Hero from './Component/Hero/Hero';
 import Featured from './Component/Featured/Featured';
 import FootBanner from './Component/FootBenner';
+import Footers from './Component/Footers/Footers';
 
 import './css/App.css';
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Featured />
       <FootBanner />
+      <Footers />
     </div>
   );
 }

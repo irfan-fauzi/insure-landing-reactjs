@@ -6,12 +6,12 @@ function Navbar(props) {
   }
   return (
     <div className="navbar flex">
-      <img src={props.img} />
+      <img src={props.img} alt="img" />
       <ul className="menus flex">
-        <li><a>{props.menu1}</a></li>
-        <li><a>{props.menu2}</a></li>
-        <li><a>{props.menu3}</a></li>
-        <li><a className="btn">{props.btn}</a></li>
+        <li><a href="https://github.com/irfan-fauzi">{props.menu1}</a></li>
+        <li><a href="https://github.com/irfan-fauzi">{props.menu2}</a></li>
+        <li><a href="https://github.com/irfan-fauzi">{props.menu3}</a></li>
+        <li><a className="btn" href="https://github.com/irfan-fauzi">{props.btn}</a></li>
       </ul>
       <div className="menu-toggle">
         <input type="checkbox" onChange={action} />
