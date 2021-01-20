@@ -3,7 +3,7 @@ import HeroTextWrap from './HeroTextWrap';
 function Hero() {
   const dataHero = [
     {
-      mainTagline: "Humanizing your Insurance.",
+      mainTagline: "Manusia your Insurance.",
       secondTagline: "Get your live insurance coverage easier and faster. We blend our expertise and technology to help your find the plan that's rights for you. Ensure you and your loved ones are protected",
       btnText: "view plans",
       imgHero: "https://raw.githubusercontent.com/irfan-fauzi/insure-landing-reactjs/main/src/images/image-intro-desktop.jpg"
